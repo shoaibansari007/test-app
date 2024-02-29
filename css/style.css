@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-attach-img {
+  background-image: url(/img/banner-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inner-box-shadow-up {
+  box-shadow: inset 0px 80px 80px 15px #fff;
+  z-index: 10;
+}
+.inner-box-shadow-down {
+  box-shadow: inset 0px -60px 70px 10px #000;
+  z-index: 10;
+}
+.border-radius {
+  border-bottom-left-radius: 130px;
+}
+.bg-white-blue {
+  background: linear-gradient(135deg, #00ffff, #fff, #fff, #fff);
+  border-top-left-radius: 10px;
+}
+.custom-radius {
+  border-radius: 10px 60px 10px 10px;
+}
+.custom-nav-bg {
+  background: linear-gradient(
+    #ffffff,
+    #ffffffbb,
+    #ffffff88,
+    #ffffff88,
+    #ffffff33,
+    transparent,
+    transparent
+  );
+}
+.custom-img {
+  background-image: url(/img/banner-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hide {
+  display: none;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+.writing-mode {
+  writing-mode: vertical-lr;
+  rotate: 180deg;
+}

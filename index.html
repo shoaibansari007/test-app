@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="w-full h-screen overflow-hidden border-radius bg-slate-100">
+      <div
+        class="flex flex-col justify-between w-full h-full bg-attach-img inner-box-shadow-up inner-box-shadow-down"
+      >
+        <nav class="flex justify-between py-2 md:p-4 md:px-8 custom-nav-bg">
+          <ul class="flex flex-row gap-2 md:mx-8">
+            <li
+              class="border shadow-2xl border-solid border-[#74dfff] rounded-lg bg-white/70 p-2 w-12 h-12 ml-2 cursor-pointer menuOpenBtn"
+            >
+              <img src="img/menus.png" alt="Menu" width="30px" height="30px" />
+            </li>
+            <li
+              class="border shadow-sm border-solid border-[#74dfff] rounded-lg bg-white/70 p-2 w-12 h-12 hidden md:block"
+            >
+              <img src="img/mail.png" alt="Menu" width="30px" height="30px" />
+            </li>
+          </ul>
+          <img
+            src="/img/logo.png"
+            alt="master logo"
+            width="400px"
+            height="100px"
+            class="w-[200px] h-[50px] md:w-[400px] md:h-[100px]"
+          />
+          <ul class="flex flex-row gap-2 mx-8">
+            <li
+              class="border shadow-sm border-solid border-[#74dfff] rounded-lg bg-white/70 p-2 w-12 h-12 hidden md:block"
+            >
+              <img src="img/search.png" alt="Menu" width="30px" height="30px" />
+            </li>
+            <li
+              class="border shadow-sm border-solid border-[#74dfff] rounded-lg bg-white/70 p-2 w-12 h-12 hidden md:block"
+            >
+              <a href=""
+                ><img src="img/share.png" alt="Menu" width="30px" height="30px"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-col md:flex-row justify-between w-full md:w-[80%] float-right ml-auto"
+        >
+          <div
+            class="flex flex-row items-center gap-6 text-sm font-semibold text-white"
+          >
+            <p>ANNOUNCEMENTS</p>
+            <img src="img/promotion.png" alt="" width="30px" />
+            <p>
+              Admissions are open <br />
+              for the academic year 2021-22
+            </p>
+          </div>
+          <div class="flex flex-row gap-1 ml-auto md:gap-8">
+            <div class="flex flex-row items-center gap-4">
+              <img
+                src="img/left-arrow.png"
+                alt="left"
+                class="w-6 h-6 p-1 bg-blue-400 rounded-md"
+              />
+              <img
+                src="img/right-arrow.png"
+                alt="right"
+                class="w-6 h-6 p-1 bg-blue-400 rounded-md"
+              />
+            </div>
+            <div
+              class="py-2 pl-4 italic font-semibold text-blue-400 bg-white-blue w-[300px] md:ml-auto"
+            >
+              <p>
+                Empowering students <br /><span class="font-normal"
+                  >to create solutions</span
+                ><br />
+                for tomorrow's challanges
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hide menu-section">
+        <div
+          class="absolute top-0 flex flex-col w-full min-h-screen text-white bg-black md:flex-row"
+        >
+          <div class="px-4 md:px-20 py-8 bg-[#1b1604] w-full md:w-2/5">
+            <button class="flex flex-row items-center gap-2 mb-20 menuCloseBtn">
+              <img src="img/close.png" alt="close" width="10px" />
+              <p>Close</p>
+            </button>
+            <div class="text-xl">
+              <ul>
+                <li class="my-4">
+                  <span class="text-red-600">+ </span> Weddings
+                </li>
+                <li class="my-4">
+                  <span class="text-red-600">+ </span> Corporate Events
+                </li>
+                <li class="my-4">
+                  <span class="text-red-600">+ </span>Activities
+                </li>
+                <li class="my-4">
+                  <span class="text-red-600">+ </span> Accommodations
+                </li>
+                <li class="my-4">
+                  <span class="text-red-600">+ </span> Occasions
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full px-4 py-8 bg-[#1b160488] md:px-16 md:w-3/5">
+            <div class="flex flex-row text-white md:gap-24 my-28">
+              <div class="min-w-fit">
+                <ul class="flex flex-col gap-4 text-xl">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Gallery</a></li>
+                  <li><a href="">Facilities</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Getting Here</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="mb-6">
+                  145/3, Ashirwad Lawns, Aurangabad Highways, Nandur, Nashik -
+                  422003
+                </p>
+                <p class="mb-6"><a href="">GET DIRECTIONS ></a></p>
+                <p class="mb-6">+91 98237 86101 <br />info@ashiwadlawns.com</p>
+                <p class="mb-2">Follow Us on</p>
+                <div class="flex flex-row gap-4">
+                  <img src="img/fb-white.png" alt="" width="20px" />
+                  <img src="img/instagram (1).png" alt="" width="20px" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-12">
+      <div class="flex flex-col justify-center">
+        <div class="my-12 text-center">
+          <h2 class="text-lg font-medium text-orange-600">INSIGHTS</h2>
+          <p class="text-4xl">
+            SHM Store
+            <span class="font-semibold">Marketplace Insights</span>
+          </p>
+          <p class="mx-auto my-4 text-gray-500 md:w-2/4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            ducimus recusandae veniam beatae harum unde ex assumenda. beatae
+            harum unde ex assumenda.
+          </p>
+        </div>
+        <div class="flex flex-row">
+          <div class="w-[100px] overflow-hidden opacity-30 hidden lg:block">
+            <div
+              class="w-[700px] relative mx-auto shadow-2xl rounded-2xl float-end"
+            >
+              <img src="img/Insights.jpg" alt="" class="w-full rounded-2xl" />
+              <div
+                class="flex flex-row items-center justify-between px-8 py-4 text-white bg-orange-600 rounded-b-2xl"
+              >
+                <div class="flex flex-col justify-center w-fit">
+                  <p class="mx-auto">1 of 7</p>
+                  <div class="flex flex-row gap-4 mt-2">
+                    <img
+                      src="img/Our-Service-Arrow.svg"
+                      alt=""
+                      class="w-4 rotate-180"
+                    />
+                    <img src="img/Our-Service-Arrow.svg" alt="" class="w-4" />
+                  </div>
+                </div>
+                <div>
+                  <p class="text-2xl font-normal">
+                    We trake your vessels to deliver <br />at earliest port of
+                    call
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="p-1 px-4 text-orange-600 bg-gray-100 rounded-full"
+                  >
+                    Visit The Page
+                  </button>
+                </div>
+              </div>
+              <div class="absolute w-40 h-40 pr-8 overflow-clip top-8 -left-20">
+                <img src="/img/dot.svg" alt="" class="min-w-[600px]" />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="w-full lg:w-[700px] h-fit relative mx-auto shadow-2xl rounded-2xl"
+          >
+            <img src="img/Insights.jpg" alt="" class="w-full rounded-2xl" />
+            <div
+              class="flex flex-col items-center justify-between p-2 text-white bg-orange-600 md:px-8 md:py-4 md:flex-row rounded-b-2xl"
+            >
+              <div class="flex flex-col justify-center w-fit">
+                <p class="mx-auto">1 of 7</p>
+                <div class="flex flex-row gap-4 mt-2">
+                  <img
+                    src="img/Our-Service-Arrow.svg"
+                    alt=""
+                    class="w-4 rotate-180"
+                  />
+                  <img src="img/Our-Service-Arrow.svg" alt="" class="w-4" />
+                </div>
+              </div>
+              <div>
+                <p class="font-normal md:text-2xl">
+                  We trake your vessels to deliver <br />at earliest port of
+                  call
+                </p>
+              </div>
+              <div>
+                <button
+                  class="p-1 px-4 text-orange-600 bg-gray-100 rounded-full"
+                >
+                  Visit The Page
+                </button>
+              </div>
+            </div>
+            <div class="absolute w-40 h-40 pr-8 overflow-clip top-8 -left-20">
+              <img src="/img/dot.svg" alt="" class="lg:min-w-[600px]" />
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="w-[100px] overflow-hidden opacity-30 hidden lg:block">
+            <div class="w-[700px] relative mx-auto shadow-2xl rounded-2xl">
+              <img src="img/Insights.jpg" alt="" class="w-full rounded-2xl" />
+              <div
+                class="flex flex-col items-center justify-between px-8 py-4 text-white bg-orange-600 md:flex-row rounded-b-2xl"
+              >
+                <div class="flex flex-col justify-center w-fit">
+                  <p class="mx-auto">1 of 7</p>
+                  <div class="flex flex-row gap-4 mt-2">
+                    <img
+                      src="img/Our-Service-Arrow.svg"
+                      alt=""
+                      class="w-4 rotate-180"
+                    />
+                    <img src="img/Our-Service-Arrow.svg" alt="" class="w-4" />
+                  </div>
+                </div>
+                <div>
+                  <p class="text-2xl font-normal">
+                    We trake your vessels to deliver <br />at earliest port of
+                    call
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="p-1 px-4 text-orange-600 bg-gray-100 rounded-full"
+                  >
+                    Visit The Page
+                  </button>
+                </div>
+              </div>
+              <div class="absolute w-40 h-40 pr-8 overflow-clip top-8 -left-20">
+                <img src="/img/dot.svg" alt="" class="min-w-[600px]" />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- Map -->
+    <section class="pb-12">
+      <div class="flex flex-col justify-center">
+        <div class="my-12 text-center">
+          <h2 class="text-lg font-medium text-orange-600">NETWORK</h2>
+          <p class="text-4xl">
+            SHM Network
+            <span class="font-semibold">Capability</span>
+          </p>
+          <p class="mx-auto my-4 text-gray-500 md:w-2/4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            ducimus recusandae veniam beatae harum unde ex assumenda. beatae
+            harum unde ex assumenda.
+          </p>
+        </div>
+        <div class="relative mx-auto w-fit">
+          <img src="img/F97E3234.png" alt="" />
+          <div class="absolute top-28 left-20 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-xs">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="absolute top-16 left-20 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-sm">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+          <div class="absolute top-8 left-20 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-sm">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+
+          <div class="absolute top-60 left-32 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-sm">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+          <div class="absolute top-80 left-20 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-sm">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+          <div class="absolute top-96 left-28 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-sm">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+          <div class="absolute top-40 left-28 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-sm">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+          <div class="absolute top-52 left-40 mapPoint accordion-item">
+            <div
+              class="w-4 h-4 bg-blue-600 border-4 border-white border-solid rounded-full cursor-pointer mapBtn accordion-header"
+            ></div>
+            <div
+              class="p-2 mt-1 bg-white rounded-md w-[200px] h-fit accordion-content hide"
+            >
+              <h1 class="text-sm">SHM Shipcare</h1>
+              <p class="text-[10px] text-gray-700 mb-2">
+                House, Springfield Drive, Leatherhead, survey KT22 7GR, Denmark
+              </p>
+              <a
+                href=""
+                class="text-[10px] text-orange-600 border-t border-orange-400 border-solid"
+                >View Map</a
+              >
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- Map end -->
+    <section class="">
+      <div class="p-12 text-center bg-orange-500">
+        <p class="text-2xl text-white">Get your Prodect Delivered in</p>
+        <p class="my-4 text-2xl font-semibold text-white">
+          Your Preferred city or The Next Port Of Call.
+        </p>
+        <div class="">
+          <button
+            class="flex flex-row items-center h-10 gap-4 p-1 px-4 mx-auto text-orange-600 bg-gray-100 rounded-full"
+          >
+            <p>Contact Us</p>
+            <img
+              src="img/whatsapp.png"
+              alt="whatsapp"
+              width="16px"
+              class="my-1"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-col justify-around p-12 pb-0 md:flex-row mg:flex-row bg-blue-950"
+    >
+      <div
+        class="relative p-6 py-8 mb-8 bg-white md:mb-0 md:bottom-24 w-60 custom-radius"
+      >
+        <img src="img/logo.svg" alt="" class="w-full" />
+        <div class="flex flex-row items-center my-4">
+          <div class="w-[30%] h-[2px] bg-gray-600 rounded-sm"></div>
+          <div class="w-[30%] h-2 bg-orange-600 rounded-full"></div>
+          <div class="w-[30%] h-[2px] bg-gray-600 rounded-sm"></div>
+        </div>
+        <p class="my-4 text-sm text-center">
+          We give you complete control of your shipments. delivered on time with
+          no hassle.
+        </p>
+
+        <div class="flex flex-row justify-center gap-2">
+          <a href=""
+            ><img
+              src="img/facebook-app-symbol.png"
+              alt=""
+              class="w-8 p-2 border-2 border-orange-600 border-solid rounded-full"
+          /></a>
+          <a href=""
+            ><img
+              src="img/twitter (1).png"
+              alt=""
+              class="w-8 p-2 border-2 border-orange-600 border-solid rounded-full"
+          /></a>
+          <a href=""
+            ><img
+              src="img/linkedin.png"
+              alt=""
+              class="w-8 p-2 border-2 border-orange-600 border-solid rounded-full"
+          /></a>
+          <a href=""
+            ><img
+              src="img/youtube (1).png"
+              alt=""
+              class="w-8 p-2 border-2 border-orange-600 border-solid rounded-full"
+          /></a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 md:gap-20 md:flex-row text-white/80">
+        <div>
+          <h3 class="font-semibold md:mb-4">Usefull Links</h3>
+          <hr class="w-12 mb-4" />
+          <ul>
+            <li class="my-2"><a href="">Blog</a></li>
+            <li class="my-2"><a href="">SHM Store</a></li>
+            <li class="my-2"><a href="">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold md:mb-4">Company</h3>
+          <hr class="w-12 mb-4" />
+          <ul>
+            <li class="my-2"><a href="">SHM Group</a></li>
+            <li class="my-2"><a href="">SHM Fire Safety</a></li>
+            <li class="my-2"><a href="">SHM Shipcare</a></li>
+            <li class="my-2"><a href="">SHM Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold md:mb-4">Comapny</h3>
+          <hr class="w-12 mb-4" />
+          <ul>
+            <li class="my-2">
+              <a href="" class="flex flex-row gap-4"
+                ><img src="img/call.png" alt="" width="16px" />
+                <p>+91-222-378-6400</p></a
+              >
+            </li>
+            <li class="my-2">
+              <a href="" class="flex flex-row gap-4"
+                ><img
+                  src="img/email.png"
+                  alt=""
+                  width="16px"
+                />info@theshmstore.com</a
+              >
+            </li>
+            <li class="my-2">
+              <a href="" class="flex flex-row gap-4"
+                ><img
+                  src="img/location-pin.png"
+                  width="16px"
+                  height="10px"
+                  alt=""
+                />Head Offie BPT. Plot no 51B</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="md:px-16 md:pt-16 px-8 pt-8 bg-[#060642]">
+      <div class="flex flex-col justify-between mb-8 text-white md:flex-row">
+        <div class="">
+          <p class="text-lg">Have Questions?</p>
+          <p class="my-1 text-xs">Ask Our 24/7 Customer Support Executive</p>
+          <p class="my-2 text-xl">Call Us: +91 1800-3002-7286</p>
+        </div>
+        <div class="flex flex-col justify-between">
+          <p class="text-base">Subscribe to our newsletter</p>
+          <div
+            class="flex flex-row justify-between pl-6 border-2 border-solid rounded-full border-blue-900/50 bg-blue-800/25"
+          >
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter Email"
+              class="bg-transparent outline-none placeholder:text-blue-900/50"
+            />
+            <button class="p-1 px-4 text-gray-100 bg-orange-600 rounded-full">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex flex-col justify-between mb-4 text-white md:flex-row">
+        <div class="">
+          <p class="text-xs">
+            @2022 SHM Shipcare. All Rights Reserved. ISO 9001:2008 Certified.
+            Designed by ideamagix
+          </p>
+        </div>
+        <div class="">
+          <div>
+            <ul class="flex flex-row gap-4 mt-4 text-xs md:mt-0 md:gap-16">
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms & Condition</a></li>
+              <li><a href="">Site Map</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-4 bg-orange-600 rounded-t-2xl"></div>
+    </footer>
+    <div class="hidden fixed right-0 md:flex justify-center top-[25%]">
+      <p class="writing-mode">
+        <a href="" class="px-2 py-4 text-white bg-blue-600 rounded-r-lg"
+          >Enroll Now</a
+        ><a href="" class="px-2 py-4 my-4 text-white bg-pink-600 rounded-r-lg"
+          >Request a Call</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
