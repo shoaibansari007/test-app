@@ -46,10 +46,11 @@
   );
 }
 .custom-img {
-  background-image: url(/img/banner-img.jpg);
+  background-image: url(/img/ship.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: opacity(0.1);
 }
 .hide {
   display: none;

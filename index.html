@@ -31,7 +31,7 @@
             alt="master logo"
             width="400px"
             height="100px"
-            class="w-[200px] h-[50px] md:w-[400px] md:h-[100px]"
+            class="w-[200px] h-[50px] lg:w-[400px] lg:h-[100px]"
           />
           <ul class="flex flex-row gap-2 mx-8">
             <li
@@ -49,10 +49,10 @@
           </ul>
         </nav>
         <div
-          class="flex flex-col md:flex-row justify-between w-full md:w-[80%] float-right ml-auto"
+          class="flex flex-col md:flex-row justify-between w-full md:w-[90%] lg:w-[80%] float-right ml-auto"
         >
           <div
-            class="flex flex-row items-center gap-6 text-sm font-semibold text-white"
+            class="flex flex-row items-center justify-center gap-2 text-sm font-semibold text-white lg:gap-6"
           >
             <p>ANNOUNCEMENTS</p>
             <img src="img/promotion.png" alt="" width="30px" />
@@ -62,7 +62,7 @@
             </p>
           </div>
           <div class="flex flex-row gap-1 ml-auto md:gap-8">
-            <div class="flex flex-row items-center gap-4">
+            <div class="flex flex-row items-center gap-2 lg:gap-4">
               <img
                 src="img/left-arrow.png"
                 alt="left"
@@ -156,7 +156,7 @@
             SHM Store
             <span class="font-semibold">Marketplace Insights</span>
           </p>
-          <p class="mx-auto my-4 text-gray-500 md:w-2/4">
+          <p class="mx-auto my-4 text-gray-500 md:w-2/3 lg:w-2/4">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
             ducimus recusandae veniam beatae harum unde ex assumenda. beatae
             harum unde ex assumenda.
@@ -280,7 +280,8 @@
       </div>
     </section>
     <!-- Map -->
-    <section class="pb-12">
+    <section class="relative pb-12">
+      <div class="absolute top-0 left-0 w-full h-full custom-img"></div>
       <div class="flex flex-col justify-center">
         <div class="my-12 text-center">
           <h2 class="text-lg font-medium text-orange-600">NETWORK</h2>
@@ -288,7 +289,7 @@
             SHM Network
             <span class="font-semibold">Capability</span>
           </p>
-          <p class="mx-auto my-4 text-gray-500 md:w-2/4">
+          <p class="mx-auto my-4 text-gray-500 md:w-2/3 lg:w-2/4">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
             ducimus recusandae veniam beatae harum unde ex assumenda. beatae
             harum unde ex assumenda.
@@ -471,10 +472,10 @@
       </div>
     </section>
     <section
-      class="flex flex-col justify-around p-12 pb-0 md:flex-row mg:flex-row bg-blue-950"
+      class="flex flex-col justify-center p-2 md:justify-around lg:p-12 md:flex-row mg:flex-row bg-blue-950"
     >
       <div
-        class="relative p-6 py-8 mb-8 bg-white md:mb-0 md:bottom-24 w-60 custom-radius"
+        class="relative p-6 py-8 mx-auto mb-8 bg-white md:mb-0 md:bottom-24 w-60 custom-radius"
       >
         <img src="img/logo.svg" alt="" class="w-full" />
         <div class="flex flex-row items-center my-4">
@@ -514,19 +515,19 @@
           /></a>
         </div>
       </div>
-      <div class="flex flex-col gap-4 md:gap-20 md:flex-row text-white/80">
-        <div>
+      <div class="flex flex-col gap-4 lg:gap-20 md:flex-row text-white/80">
+        <div class="text-center md:text-start">
           <h3 class="font-semibold md:mb-4">Usefull Links</h3>
-          <hr class="w-12 mb-4" />
+          <hr class="w-12 mx-auto mb-4 md:mx-0" />
           <ul>
             <li class="my-2"><a href="">Blog</a></li>
             <li class="my-2"><a href="">SHM Store</a></li>
             <li class="my-2"><a href="">Register</a></li>
           </ul>
         </div>
-        <div>
+        <div class="text-center md:text-start">
           <h3 class="font-semibold md:mb-4">Company</h3>
-          <hr class="w-12 mb-4" />
+          <hr class="w-12 mx-auto mb-4 md:mx-0" />
           <ul>
             <li class="my-2"><a href="">SHM Group</a></li>
             <li class="my-2"><a href="">SHM Fire Safety</a></li>
@@ -534,13 +535,19 @@
             <li class="my-2"><a href="">SHM Products</a></li>
           </ul>
         </div>
-        <div>
+        <div class="text-center md:text-start">
           <h3 class="font-semibold md:mb-4">Comapny</h3>
-          <hr class="w-12 mb-4" />
-          <ul>
+          <hr class="w-12 mx-auto mb-4 md:mx-0" />
+          <ul class="">
             <li class="my-2">
               <a href="" class="flex flex-row gap-4"
-                ><img src="img/call.png" alt="" width="16px" />
+                ><img
+                  src="img/call.png"
+                  alt=""
+                  width="16px"
+                  height="16px"
+                  class="py-1"
+                />
                 <p>+91-222-378-6400</p></a
               >
             </li>
@@ -550,7 +557,10 @@
                   src="img/email.png"
                   alt=""
                   width="16px"
-                />info@theshmstore.com</a
+                  height="16px"
+                  class="py-1"
+                />
+                <p>info@theshmstore.com</p></a
               >
             </li>
             <li class="my-2">
@@ -558,10 +568,12 @@
                 ><img
                   src="img/location-pin.png"
                   width="16px"
-                  height="10px"
+                  height="16px"
                   alt=""
-                />Head Offie BPT. Plot no 51B</a
-              >
+                  class="py-1"
+                />
+                <p>Head Offie BPT. Plot no 51B</p>
+              </a>
             </li>
           </ul>
         </div>
